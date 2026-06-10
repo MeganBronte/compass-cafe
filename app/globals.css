@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f9f1df;
+  --foreground: #201711;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(148, 216, 189, 0.24), transparent 28%),
+    linear-gradient(135deg, rgba(111, 71, 47, 0.08), transparent 34%),
+    var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(45, 116, 255, 0.45);
+  outline-offset: 2px;
+}
